@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    padding-top: 60px; /* Asegúrate de que sea igual a la altura del header */
+}
+.cabecera{
+    top: 0;
+    left: 0;
+    right: 0;
+    position:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    height: 60px;
+    opacity: 80%;
+    z-index: 5;
+}
+.logo{
+ font-size: 1rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+ul,li,.elementos,.avatar{
+    display: flex;
+    gap: 30px;
+}
+
+.avatar img{
+    width: 50px;
+    height: 50px;
+    transition: opacity 0.0s ease; /* Añadir transición */
+}
+
+.avatar img.avatar{
+    display: none;
+}
+
+.avatar:hover img.avatar{
+    opacity: 0; /* Desaparecer la imagen original */
+}
+
+.avatar:hover img.avatar{
+    display: block;
+    opacity: 1; /* Aparecer la nueva imagen */
+    position: absolute; /* Asegurarse de que la nueva imagen se muestre en el mismo lugar */
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 10px 10px 10px 10px;
+}
+.cont:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: #e9b824;
+    color: antiquewhite;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.get{
+    margin: 10px 10px 10px 10px ;
+    padding: 10px 18px 10px 18px;
+    border: 0px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: #009963;
+    font-weight: 700;
+    margin-right: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.get:hover{
+    background-color: black;
+    color:aliceblue;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.img{
+    width: 496px;
+    height: 292px;
+    border-radius: 20px;
+}
+.cont{
+    padding-left: 50px;
+}
+.h2{
+    font-size: 3.3rem;
+    font-weight: 900;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+.img{
+    width: 96px;
+    height: 160px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.p{
+    text-align: center;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .contenedor{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.contenedor:hover .img{
+    transform: scale(2.3);
+    opacity: 0.5;
+    
+}
+.contenedor{
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+.h2{
+    padding:0px 9% 0px 9% ; 
+}
+
+.subir{
+    position: fixed;
+    bottom: 20px; 
+    right: 5%; 
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    cursor: pointer;
+    opacity: 0.3; 
+    border-radius: 50%;
+    overflow: hidden; 
+    transition: opacity 0.3s ease; 
+}
+.subir:hover{
+    opacity: 1; 
+  }
+
+.get{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: #009963;
+    font-weight: 500;
+    width: 120px;
+    border-radius: 40%;
+}
+
+a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecera .menu{
+    float: right;
+}
+.cabecera .menu .elementos{
+    display: inline-block
+}
+.cabecera .menu .lista li{
+     display: inline-block;
+     line-height: 75px;
+}
+.cabecera .menu .get{
+    padding: 10px 18px 10px 18px;
+    border: 0px;
+    border-radius: 50px;
+    background-color: darkcyan;
+    font-weight: 700;
+    margin-right: 20px;
+}
+.cabecera .menu .avatar{
+    height:  20px;
+    width: 20px;
+}
